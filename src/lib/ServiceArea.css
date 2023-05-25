@@ -1,0 +1,28 @@
+@import '../app.css';
+
+.ServiceArea {
+	align-content: center;	
+	aspect-ratio: 3/4;
+		min-height: 50vw;
+	background-image: url('https://images.unsplash.com/photo-1591023272123-2c3ce3f66c1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	margin-top:3rem;
+}
+
+.ServiceArea>p {
+	aspect-ratio: auto;
+		max-width:75%;
+	text-align: center;
+	margin: auto;
+	padding: var(--defaultPadding);
+}
+
+.ServiceArea>p:first-child {
+	text-align: left;
+}
+
+.ServiceArea>p:last-child {
+	text-align: right;
+}

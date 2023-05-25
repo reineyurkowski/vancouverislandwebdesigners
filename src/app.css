@@ -1,0 +1,134 @@
+@import './lib/ServiceArea.css'; 
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ebebeb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --colorPrimary: #41e794;
+  --colorLink: #646cff;
+  --colorHover: #535bf2;
+  --colorText: rgba(0, 0, 0, 0.9);
+  --colorBackground: #ebEBeb;
+  --colorBackground2: rgba(0, 0, 0, 0.8);
+  --colorShadow: rgba(0, 0, 0, 0.4);
+
+  --defaultPadding: "3rem";
+}
+
+a {
+  font-weight: 500;
+  color: var(--colorLink);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--colorHover);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  /* min-width: 320px; */
+  min-height: 100vh;
+  height: 1000vh;
+}
+
+.button {
+	aspect-ratio: auto;
+		max-width: 50vw;
+	background-color: var(--colorPrimary);
+  	border: 1px solid transparent;
+		border-radius: 20px;
+	cursor: pointer;
+	cursor: pointer;
+  	color: var(--colorText);
+		font-size: 1em;
+  		font-weight: 500;
+		font-family: inherit;
+	transition: border-color 0.25s;
+	margin: auto;
+  	padding: 0.6em 1.2em;	
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  /* max-width: 1280px; */
+  /* margin: 0 auto;
+  padding: 2rem; */
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: var(--colorText);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--colorPrimary);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--colorHover);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.eyeCatcher {
+	animation-name: upAndDown;
+		animation-duration: 3s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	transform: translateY(0px);
+}
+	@keyframes upAndDown {
+		0% {
+			transform: 
+				translateY(0px)
+				rotate(0deg)
+			;
+		}
+
+		25% {
+			transform: rotate(-15deg); 
+		}
+
+		50% {
+			transform: 
+				translateY(20px)
+				rotate(0deg);
+		}
+
+		75% {
+			transform: rotate(15deg);
+		}
+
+		100% {
+			transform: 
+				translateY(0px);
+		}
+	} 

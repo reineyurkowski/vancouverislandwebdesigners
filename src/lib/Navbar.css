@@ -1,0 +1,51 @@
+@import '../app.css';
+
+#Navbar {
+  aspect-ratio: auto;
+    height: auto;
+    width: 100%;
+  background-color: var(--colorBackground2);
+  display:grid;
+    grid-template-columns: repeat(
+      auto-fit, minmax(300px, 1fr)
+    );
+    justify-content: space-around;
+  margin: 0px;
+    margin-bottom: 0.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    /* margin-top: 0.5rem; */
+  /* overflow: wrap; */
+  padding: auto;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+  position: sticky;
+    top: 0px;
+  transition-delay: 50ms;
+  transition-duration: 200ms;
+}
+@media only screen and (max-width: 800px){
+  #Navbar {
+    /* overflow: hidden; */
+  }
+}
+
+#Navbar img {
+  transform: translateY(-1rem);
+  max-height: 2rem;
+  filter: invert(1);
+}
+
+  #Navbar>div {  
+    /* padding: 1.0rem; */
+  }
+    #Navbar>div>a {
+      color: white;
+      text-align: center;
+      /* margin: 5rem;
+      padding: 5rem; */
+    }
+
+#headerItem {
+  padding-top: 0.5rem;
+}
